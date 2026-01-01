@@ -109,10 +109,10 @@ CREATE TRIGGER update_rating_stats AFTER INSERT OR UPDATE ON ratings
 
 -- Insert sample users (password is 'password123' hashed with bcrypt)
 INSERT INTO users (username, email, password_hash, role, full_name) VALUES
-('creator1', 'creator1@example.com', '$2a$10$YQs7XqzQZY.8Xo5P0K0fWORmJKkwJxJ4V0HwX9yHXYfJwQj0PqK5i', 'creator', 'John Creator'),
-('creator2', 'creator2@example.com', '$2a$10$YQs7XqzQZY.8Xo5P0K0fWORmJKkwJxJ4V0HwX9yHXYfJwQj0PqK5i', 'creator', 'Jane Artist'),
-('consumer1', 'consumer1@example.com', '$2a$10$YQs7XqzQZY.8Xo5P0K0fWORmJKkwJxJ4V0HwX9yHXYfJwQj0PqK5i', 'consumer', 'Bob Viewer'),
-('consumer2', 'consumer2@example.com', '$2a$10$YQs7XqzQZY.8Xo5P0K0fWORmJKkwJxJ4V0HwX9yHXYfJwQj0PqK5i', 'consumer', 'Alice Browser');
+('creator1', 'creator1@example.com', '$2a$10$lsXOVtBTtfpSI0HkgNm/8.8g6KsxSkyFDm4yylVsMvs8/7XlolRYK', 'creator', 'John Creator'),
+('creator2', 'creator2@example.com', '$2a$10$lsXOVtBTtfpSI0HkgNm/8.8g6KsxSkyFDm4yylVsMvs8/7XlolRYK', 'creator', 'Jane Artist'),
+('consumer1', 'consumer1@example.com', '$2a$10$lsXOVtBTtfpSI0HkgNm/8.8g6KsxSkyFDm4yylVsMvs8/7XlolRYK', 'consumer', 'Bob Viewer'),
+('consumer2', 'consumer2@example.com', '$2a$10$lsXOVtBTtfpSI0HkgNm/8.8g6KsxSkyFDm4yylVsMvs8/7XlolRYK', 'consumer', 'Alice Browser');
 
 -- Grant permissions (adjust as needed for your PostgreSQL setup)
 -- GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO your_db_user;
